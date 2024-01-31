@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7A24192B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24182B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift */; };
+		EF7A241B2B69D1B500C3D9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A241A2B69D1B500C3D9C9 /* ContentView.swift */; };
+		EF7A241D2B69D1B600C3D9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7A241C2B69D1B600C3D9C9 /* Assets.xcassets */; };
+		EF7A24202B69D1B600C3D9C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7A241F2B69D1B600C3D9C9 /* Preview Assets.xcassets */; };
+		EF7A242A2B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24292B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift */; };
+		EF7A24342B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24332B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift */; };
+		EF7A24362B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7A24262B69D1B600C3D9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7A240D2B69D1B500C3D9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7A24142B69D1B500C3D9C9;
+			remoteInfo = ProfileRegisterView;
+		};
+		EF7A24302B69D1B700C3D9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7A240D2B69D1B500C3D9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7A24142B69D1B500C3D9C9;
+			remoteInfo = ProfileRegisterView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF7A24152B69D1B500C3D9C9 /* ProfileRegisterView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileRegisterView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7A24182B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewApp.swift; sourceTree = "<group>"; };
+		EF7A241A2B69D1B500C3D9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF7A241C2B69D1B600C3D9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7A241F2B69D1B600C3D9C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF7A24252B69D1B600C3D9C9 /* ProfileRegisterViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileRegisterViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7A24292B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewTests.swift; sourceTree = "<group>"; };
+		EF7A242F2B69D1B700C3D9C9 /* ProfileRegisterViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileRegisterViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7A24332B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewUITests.swift; sourceTree = "<group>"; };
+		EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7A24122B69D1B500C3D9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A24222B69D1B600C3D9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A242C2B69D1B700C3D9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF7A240C2B69D1B500C3D9C9 = {
+			isa = PBXGroup;
+			children = (
+				EF7A24172B69D1B500C3D9C9 /* ProfileRegisterView */,
+				EF7A24282B69D1B600C3D9C9 /* ProfileRegisterViewTests */,
+				EF7A24322B69D1B700C3D9C9 /* ProfileRegisterViewUITests */,
+				EF7A24162B69D1B500C3D9C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7A24162B69D1B500C3D9C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24152B69D1B500C3D9C9 /* ProfileRegisterView.app */,
+				EF7A24252B69D1B600C3D9C9 /* ProfileRegisterViewTests.xctest */,
+				EF7A242F2B69D1B700C3D9C9 /* ProfileRegisterViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7A24172B69D1B500C3D9C9 /* ProfileRegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24182B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift */,
+				EF7A241A2B69D1B500C3D9C9 /* ContentView.swift */,
+				EF7A241C2B69D1B600C3D9C9 /* Assets.xcassets */,
+				EF7A241E2B69D1B600C3D9C9 /* Preview Content */,
+			);
+			path = ProfileRegisterView;
+			sourceTree = "<group>";
+		};
+		EF7A241E2B69D1B600C3D9C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A241F2B69D1B600C3D9C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF7A24282B69D1B600C3D9C9 /* ProfileRegisterViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24292B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift */,
+			);
+			path = ProfileRegisterViewTests;
+			sourceTree = "<group>";
+		};
+		EF7A24322B69D1B700C3D9C9 /* ProfileRegisterViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24332B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift */,
+				EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */,
+			);
+			path = ProfileRegisterViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7A24142B69D1B500C3D9C9 /* ProfileRegisterView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7A24392B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterView" */;
+			buildPhases = (
+				EF7A24112B69D1B500C3D9C9 /* Sources */,
+				EF7A24122B69D1B500C3D9C9 /* Frameworks */,
+				EF7A24132B69D1B500C3D9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProfileRegisterView;
+			productName = ProfileRegisterView;
+			productReference = EF7A24152B69D1B500C3D9C9 /* ProfileRegisterView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF7A24242B69D1B600C3D9C9 /* ProfileRegisterViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7A243C2B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterViewTests" */;
+			buildPhases = (
+				EF7A24212B69D1B600C3D9C9 /* Sources */,
+				EF7A24222B69D1B600C3D9C9 /* Frameworks */,
+				EF7A24232B69D1B600C3D9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7A24272B69D1B600C3D9C9 /* PBXTargetDependency */,
+			);
+			name = ProfileRegisterViewTests;
+			productName = ProfileRegisterViewTests;
+			productReference = EF7A24252B69D1B600C3D9C9 /* ProfileRegisterViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF7A242E2B69D1B700C3D9C9 /* ProfileRegisterViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7A243F2B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterViewUITests" */;
+			buildPhases = (
+				EF7A242B2B69D1B700C3D9C9 /* Sources */,
+				EF7A242C2B69D1B700C3D9C9 /* Frameworks */,
+				EF7A242D2B69D1B700C3D9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7A24312B69D1B700C3D9C9 /* PBXTargetDependency */,
+			);
+			name = ProfileRegisterViewUITests;
+			productName = ProfileRegisterViewUITests;
+			productReference = EF7A242F2B69D1B700C3D9C9 /* ProfileRegisterViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7A240D2B69D1B500C3D9C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF7A24142B69D1B500C3D9C9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EF7A24242B69D1B600C3D9C9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EF7A24142B69D1B500C3D9C9;
+					};
+					EF7A242E2B69D1B700C3D9C9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EF7A24142B69D1B500C3D9C9;
+					};
+				};
+			};
+			buildConfigurationList = EF7A24102B69D1B500C3D9C9 /* Build configuration list for PBXProject "ProfileRegisterView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7A240C2B69D1B500C3D9C9;
+			productRefGroup = EF7A24162B69D1B500C3D9C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7A24142B69D1B500C3D9C9 /* ProfileRegisterView */,
+				EF7A24242B69D1B600C3D9C9 /* ProfileRegisterViewTests */,
+				EF7A242E2B69D1B700C3D9C9 /* ProfileRegisterViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7A24132B69D1B500C3D9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7A24202B69D1B600C3D9C9 /* Preview Assets.xcassets in Resources */,
+				EF7A241D2B69D1B600C3D9C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A24232B69D1B600C3D9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A242D2B69D1B700C3D9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7A24112B69D1B500C3D9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7A241B2B69D1B500C3D9C9 /* ContentView.swift in Sources */,
+				EF7A24192B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A24212B69D1B600C3D9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7A242A2B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A242B2B69D1B700C3D9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7A24362B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift in Sources */,
+				EF7A24342B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF7A24272B69D1B600C3D9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7A24142B69D1B500C3D9C9 /* ProfileRegisterView */;
+			targetProxy = EF7A24262B69D1B600C3D9C9 /* PBXContainerItemProxy */;
+		};
+		EF7A24312B69D1B700C3D9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7A24142B69D1B500C3D9C9 /* ProfileRegisterView */;
+			targetProxy = EF7A24302B69D1B700C3D9C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF7A24372B69D1B700C3D9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF7A24382B69D1B700C3D9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7A243A2B69D1B700C3D9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProfileRegisterView/Preview Content\"";
+				DEVELOPMENT_TEAM = JA868URLCA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7A243B2B69D1B700C3D9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProfileRegisterView/Preview Content\"";
+				DEVELOPMENT_TEAM = JA868URLCA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF7A243D2B69D1B700C3D9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA868URLCA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfileRegisterView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProfileRegisterView";
+			};
+			name = Debug;
+		};
+		EF7A243E2B69D1B700C3D9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA868URLCA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfileRegisterView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProfileRegisterView";
+			};
+			name = Release;
+		};
+		EF7A24402B69D1B700C3D9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA868URLCA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProfileRegisterView;
+			};
+			name = Debug;
+		};
+		EF7A24412B69D1B700C3D9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JA868URLCA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimSangGab.ProfileRegisterViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProfileRegisterView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7A24102B69D1B500C3D9C9 /* Build configuration list for PBXProject "ProfileRegisterView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7A24372B69D1B700C3D9C9 /* Debug */,
+				EF7A24382B69D1B700C3D9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7A24392B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7A243A2B69D1B700C3D9C9 /* Debug */,
+				EF7A243B2B69D1B700C3D9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7A243C2B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7A243D2B69D1B700C3D9C9 /* Debug */,
+				EF7A243E2B69D1B700C3D9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7A243F2B69D1B700C3D9C9 /* Build configuration list for PBXNativeTarget "ProfileRegisterViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7A24402B69D1B700C3D9C9 /* Debug */,
+				EF7A24412B69D1B700C3D9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7A240D2B69D1B500C3D9C9 /* Project object */;
+}

@@ -14,6 +14,15 @@
 		EF7A242A2B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24292B69D1B700C3D9C9 /* ProfileRegisterViewTests.swift */; };
 		EF7A24342B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24332B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift */; };
 		EF7A24362B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */; };
+		EF7A24472B69D27200C3D9C9 /* LeadingAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24462B69D27200C3D9C9 /* LeadingAlignmentView.swift */; };
+		EF7A24492B69D28200C3D9C9 /* TrailingAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24482B69D28200C3D9C9 /* TrailingAlignmentView.swift */; };
+		EF7A244B2B69D29C00C3D9C9 /* AlignmentFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A244A2B69D29C00C3D9C9 /* AlignmentFeatures.swift */; };
+		EF7A24502B69D4FA00C3D9C9 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A244F2B69D4FA00C3D9C9 /* ExerciseView.swift */; };
+		EF7A24532B69D6BA00C3D9C9 /* ExerciseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24522B69D6BA00C3D9C9 /* ExerciseHeaderView.swift */; };
+		EF7A24552B69FF5200C3D9C9 /* ExerciseHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24542B69FF5200C3D9C9 /* ExerciseHeadlineView.swift */; };
+		EF7A245D2B6A13DA00C3D9C9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A245C2B6A13DA00C3D9C9 /* Color.swift */; };
+		EF7A24602B6A1F7200C3D9C9 /* SkipNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */; };
+		EF7A24622B6A222300C3D9C9 /* ExerciseFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24612B6A222300C3D9C9 /* ExerciseFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		EF7A242F2B69D1B700C3D9C9 /* ProfileRegisterViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileRegisterViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7A24332B69D1B700C3D9C9 /* ProfileRegisterViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewUITests.swift; sourceTree = "<group>"; };
 		EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegisterViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF7A24462B69D27200C3D9C9 /* LeadingAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAlignmentView.swift; sourceTree = "<group>"; };
+		EF7A24482B69D28200C3D9C9 /* TrailingAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingAlignmentView.swift; sourceTree = "<group>"; };
+		EF7A244A2B69D29C00C3D9C9 /* AlignmentFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentFeatures.swift; sourceTree = "<group>"; };
+		EF7A244F2B69D4FA00C3D9C9 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		EF7A24522B69D6BA00C3D9C9 /* ExerciseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHeaderView.swift; sourceTree = "<group>"; };
+		EF7A24542B69FF5200C3D9C9 /* ExerciseHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHeadlineView.swift; sourceTree = "<group>"; };
+		EF7A245C2B6A13DA00C3D9C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipNextView.swift; sourceTree = "<group>"; };
+		EF7A24612B6A222300C3D9C9 /* ExerciseFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +112,12 @@
 		EF7A24172B69D1B500C3D9C9 /* ProfileRegisterView */ = {
 			isa = PBXGroup;
 			children = (
-				EF7A24182B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift */,
-				EF7A241A2B69D1B500C3D9C9 /* ContentView.swift */,
-				EF7A241C2B69D1B600C3D9C9 /* Assets.xcassets */,
+				EF7A245E2B6A1F6700C3D9C9 /* CommonView */,
+				EF7A244D2B69D2D800C3D9C9 /* App */,
+				EF7A24442B69D26400C3D9C9 /* Utils */,
+				EF7A24432B69D21500C3D9C9 /* Interests */,
+				EF7A24422B69D20F00C3D9C9 /* Exercise */,
+				EF7A244E2B69D2E000C3D9C9 /* ContentView */,
 				EF7A241E2B69D1B600C3D9C9 /* Preview Content */,
 			);
 			path = ProfileRegisterView;
@@ -125,6 +146,92 @@
 				EF7A24352B69D1B700C3D9C9 /* ProfileRegisterViewUITestsLaunchTests.swift */,
 			);
 			path = ProfileRegisterViewUITests;
+			sourceTree = "<group>";
+		};
+		EF7A24422B69D20F00C3D9C9 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24512B69D63700C3D9C9 /* CustomView */,
+				EF7A244F2B69D4FA00C3D9C9 /* ExerciseView.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		EF7A24432B69D21500C3D9C9 /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interests;
+			sourceTree = "<group>";
+		};
+		EF7A24442B69D26400C3D9C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A245B2B6A13D400C3D9C9 /* Color */,
+				EF7A244C2B69D2C700C3D9C9 /* Assets */,
+				EF7A24452B69D26900C3D9C9 /* Alignment */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF7A24452B69D26900C3D9C9 /* Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24462B69D27200C3D9C9 /* LeadingAlignmentView.swift */,
+				EF7A24482B69D28200C3D9C9 /* TrailingAlignmentView.swift */,
+				EF7A244A2B69D29C00C3D9C9 /* AlignmentFeatures.swift */,
+			);
+			path = Alignment;
+			sourceTree = "<group>";
+		};
+		EF7A244C2B69D2C700C3D9C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A241C2B69D1B600C3D9C9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EF7A244D2B69D2D800C3D9C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24182B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EF7A244E2B69D2E000C3D9C9 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A241A2B69D1B500C3D9C9 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		EF7A24512B69D63700C3D9C9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24522B69D6BA00C3D9C9 /* ExerciseHeaderView.swift */,
+				EF7A24542B69FF5200C3D9C9 /* ExerciseHeadlineView.swift */,
+				EF7A24612B6A222300C3D9C9 /* ExerciseFooterView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EF7A245B2B6A13D400C3D9C9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A245C2B6A13DA00C3D9C9 /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		EF7A245E2B6A1F6700C3D9C9 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */,
+			);
+			path = CommonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7A24502B69D4FA00C3D9C9 /* ExerciseView.swift in Sources */,
 				EF7A241B2B69D1B500C3D9C9 /* ContentView.swift in Sources */,
+				EF7A245D2B6A13DA00C3D9C9 /* Color.swift in Sources */,
+				EF7A24552B69FF5200C3D9C9 /* ExerciseHeadlineView.swift in Sources */,
+				EF7A24622B6A222300C3D9C9 /* ExerciseFooterView.swift in Sources */,
+				EF7A24532B69D6BA00C3D9C9 /* ExerciseHeaderView.swift in Sources */,
+				EF7A24472B69D27200C3D9C9 /* LeadingAlignmentView.swift in Sources */,
+				EF7A24602B6A1F7200C3D9C9 /* SkipNextView.swift in Sources */,
+				EF7A24492B69D28200C3D9C9 /* TrailingAlignmentView.swift in Sources */,
+				EF7A244B2B69D29C00C3D9C9 /* AlignmentFeatures.swift in Sources */,
 				EF7A24192B69D1B500C3D9C9 /* ProfileRegisterViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

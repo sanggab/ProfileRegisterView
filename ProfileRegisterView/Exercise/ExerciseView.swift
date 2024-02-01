@@ -26,7 +26,7 @@ public struct BaseFlowLayout<Element, ContentView: View>: FlowLayoutFeatures {
 }
 
 public struct ExerciseView: View {
-    public var exerciseList: [String] = ["Soccer", "BaseBall", "Taekwondo", "Karate", "Yoga", "Kickboxig", "Climbing", "Running", "Golf", "Cycling", "Ski", "Kayak", "Tennis", "Bowling", "Table Tennis", "Basketball", "Fencing", "Football", "Jogging", "Volleyball", "Hockey", "Ice Hockey", "Training", "Swimming", "Crossfit", "Meditation", "Sports dance", "Horse riding", "Skating", "Puzzle", "Drink", "Opera", "Photograph", "oneTwoThree", "FourFiveSix", "HiNiceTo", "My", "Name", "IS", "KAPPA", "GAB", "엄청 매우 긴 운동을 넣어보자", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지"]
+    public var exerciseList: [String] = ["Soccer", "BaseBall", "Taekwondo", "Karate", "Yoga", "Kickboxing", "Climbing", "Running", "Golf", "Cycling", "Ski", "Kayak", "Tennis", "Bowling", "Table Tennis", "Basketball", "Fencing", "Football", "Jogging", "Volleyball", "Hockey", "Ice Hockey", "Training", "Swimming", "Crossfit", "Meditation", "Sports dance", "Horse riding", "Skating", "Puzzle", "Drink", "Opera", "Photograph", "oneTwoThree", "FourFiveSix", "HiNiceTo", "My", "Name", "IS", "KAPPA", "GAB", "엄청 매우 긴 운동을 넣어보자", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지"]
     
     @State private var selectedList: [String] = []
     @State private var listSelectedState: Bool = true
@@ -66,12 +66,12 @@ public struct ExerciseView: View {
                     ScrollView {
                         if layoutDirection == .leftToRight {
                             leadingListView
-                                .padding(.top, 20)
+                                .padding(.top, 1)
                                 .padding(.horizontal, 12)
                                 .padding(.bottom, 32)
                         } else {
                             trailingListView
-                                .padding(.top, 20)
+                                .padding(.top, 1)
                                 .padding(.horizontal, 12)
                                 .padding(.bottom, 32)
                         }
@@ -80,6 +80,7 @@ public struct ExerciseView: View {
                     LinearGradient(colors: [.white.opacity(0), .white.opacity(0.7), .white], startPoint: .top, endPoint: .bottom)
                         .frame(height: 32)
                 }
+                .padding(.top, 20)
                 
                 VStack(spacing: 0) {
                     
@@ -199,6 +200,9 @@ public struct ExerciseView: View {
                     .frame(width: 18, height: 18)
                     .padding(.leading, 0)
                     .padding(.trailing, 6)
+                    .onTapGesture {
+                        selectedList.removeAll(where: { $0 == exercise})
+                    }
             }
             .background(.primary150)
             .cornerRadius(12)
@@ -206,9 +210,6 @@ public struct ExerciseView: View {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(lineWidth: 1)
                     .foregroundColor(.primary500)
-            }
-            .onTapGesture {
-                selectedList.removeAll(where: { $0 == exercise})
             }
             
         }))
@@ -231,6 +232,9 @@ public struct ExerciseView: View {
                     .frame(width: 18, height: 18)
                     .padding(.leading, 0)
                     .padding(.trailing, 6)
+                    .onTapGesture {
+                        selectedList.removeAll(where: { $0 == exercise})
+                    }
             }
             .padding(.horizontal, 12)
             .background(.primary150)
@@ -239,9 +243,6 @@ public struct ExerciseView: View {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(lineWidth: 1)
                     .foregroundColor(.primary500)
-            }
-            .onTapGesture {
-                selectedList.removeAll(where: { $0 == exercise})
             }
         }))
     }

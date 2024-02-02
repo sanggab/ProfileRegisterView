@@ -24,6 +24,8 @@
 		EF7A24602B6A1F7200C3D9C9 /* SkipNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */; };
 		EF7A24622B6A222300C3D9C9 /* ExerciseFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24612B6A222300C3D9C9 /* ExerciseFooterView.swift */; };
 		EF7A24E72B6B7E3E00C3D9C9 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = EF7A24E62B6B7E3E00C3D9C9 /* SwiftUIIntrospect */; };
+		EF7A24EA2B6CAE3900C3D9C9 /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24E92B6CAE3900C3D9C9 /* JobView.swift */; };
+		EF7A24ED2B6CB36500C3D9C9 /* FlowLayoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A24EC2B6CB36500C3D9C9 /* FlowLayoutListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		EF7A245C2B6A13DA00C3D9C9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipNextView.swift; sourceTree = "<group>"; };
 		EF7A24612B6A222300C3D9C9 /* ExerciseFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFooterView.swift; sourceTree = "<group>"; };
+		EF7A24E92B6CAE3900C3D9C9 /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		EF7A24EC2B6CB36500C3D9C9 /* FlowLayoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				EF7A244D2B69D2D800C3D9C9 /* App */,
 				EF7A24442B69D26400C3D9C9 /* Utils */,
 				EF7A24432B69D21500C3D9C9 /* Interests */,
+				EF7A24E82B6CAE2F00C3D9C9 /* Job */,
 				EF7A24422B69D20F00C3D9C9 /* Exercise */,
 				EF7A244E2B69D2E000C3D9C9 /* ContentView */,
 				EF7A241E2B69D1B600C3D9C9 /* Preview Content */,
@@ -231,9 +236,26 @@
 		EF7A245E2B6A1F6700C3D9C9 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				EF7A24EB2B6CB32800C3D9C9 /* FlowLayoutListView */,
 				EF7A245F2B6A1F7200C3D9C9 /* SkipNextView.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		EF7A24E82B6CAE2F00C3D9C9 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24E92B6CAE3900C3D9C9 /* JobView.swift */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		EF7A24EB2B6CB32800C3D9C9 /* FlowLayoutListView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A24EC2B6CB36500C3D9C9 /* FlowLayoutListView.swift */,
+			);
+			path = FlowLayoutListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,9 +397,11 @@
 				EF7A24502B69D4FA00C3D9C9 /* ExerciseView.swift in Sources */,
 				EF7A241B2B69D1B500C3D9C9 /* ContentView.swift in Sources */,
 				EF7A245D2B6A13DA00C3D9C9 /* Color.swift in Sources */,
+				EF7A24ED2B6CB36500C3D9C9 /* FlowLayoutListView.swift in Sources */,
 				EF7A24552B69FF5200C3D9C9 /* ExerciseHeadlineView.swift in Sources */,
 				EF7A24622B6A222300C3D9C9 /* ExerciseFooterView.swift in Sources */,
 				EF7A24532B69D6BA00C3D9C9 /* ExerciseHeaderView.swift in Sources */,
+				EF7A24EA2B6CAE3900C3D9C9 /* JobView.swift in Sources */,
 				EF7A24472B69D27200C3D9C9 /* LeadingAlignmentView.swift in Sources */,
 				EF7A24602B6A1F7200C3D9C9 /* SkipNextView.swift in Sources */,
 				EF7A24492B69D28200C3D9C9 /* TrailingAlignmentView.swift in Sources */,

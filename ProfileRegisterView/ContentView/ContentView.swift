@@ -16,7 +16,7 @@ public struct ContentView: View {
                 } label: {
                     Text("Exercise")
                 }
-                
+
                 NavigationLink {
                     Text("Interests")
                 } label: {

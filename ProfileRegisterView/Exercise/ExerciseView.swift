@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIIntrospect
 
 public struct BaseFlowLayout<Element, ContentView: View>: FlowLayoutFeatures {
     
@@ -31,6 +32,8 @@ public struct ExerciseView: View {
     @State private var selectedList: [String] = []
     @State private var listSelectedState: Bool = true
     
+    @State private var selectedListHeight: CGFloat = 0
+    
     @State private var btnState: Bool = false
     
     @Environment(\.layoutDirection) private var layoutDirection
@@ -38,12 +41,9 @@ public struct ExerciseView: View {
     public var body: some View {
         saveBody
             .onChange(of: selectedList.count) { count in
-                print("count -> \(count)")
-                if count >= 5 {
-                    print("더이상 선택 불가능")
+                if count >= 30 {
                     listSelectedState = false
-                } else if count > 0 && count < 5 {
-                    print("선택 잘 했다")
+                } else if count > 0 && count < 30 {
                     listSelectedState = true
                     btnState = true
                 } else if count == 0 {
@@ -63,19 +63,8 @@ public struct ExerciseView: View {
                 ExerciseHeadlineView()
                 
                 ZStack(alignment: .bottomLeading) {
-                    ScrollView {
-                        if layoutDirection == .leftToRight {
-                            leadingListView
-                                .padding(.top, 1)
-                                .padding(.horizontal, 12)
-                                .padding(.bottom, 32)
-                        } else {
-                            trailingListView
-                                .padding(.top, 1)
-                                .padding(.horizontal, 12)
-                                .padding(.bottom, 32)
-                        }
-                    }
+                    
+                    mainScrollView
                     
                     LinearGradient(colors: [.white.opacity(0), .white.opacity(0.7), .white], startPoint: .top, endPoint: .bottom)
                         .frame(height: 32)
@@ -83,23 +72,11 @@ public struct ExerciseView: View {
                 .padding(.top, 20)
                 
                 VStack(spacing: 0) {
+
+                    selectedScrollView
                     
-                    ZStack {
-                        if layoutDirection == .leftToRight {
-                            selectedLeadingListView
-                                .padding(.top, 16)
-                                .padding(.bottom, 10)
-                        } else {
-                            selectedTrailingListView
-                                .padding(.top, 16)
-                                .padding(.bottom, 10)
-                        }
-                    }
-                    .frame(minHeight: 53)
-//                    .padding(.horizontal, 12)
-                        
                     ExerciseFooterView()
-//                        .padding(.horizontal, 12)
+                        .padding(.horizontal, 12)
                     
                     SkipNextView(nextBtnState: $btnState)
                         .skipBtnTap {
@@ -110,15 +87,38 @@ public struct ExerciseView: View {
                         }
                         .padding(.top, 10)
                         .padding(.bottom, 24)
-//                        .padding(.horizontal, 12)
+                        .padding(.horizontal, 12)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.horizontal, 12)
             }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .padding(.vertical)
+    }
+    
+}
+
+// MARK: - 메인 리스트 @ViewBuilder
+extension ExerciseView {
+    
+    @ViewBuilder
+    private var mainScrollView: some View {
+        ScrollView(showsIndicators: false) {
+            mainListView
+                .padding(.top, 1)
+                .padding(.horizontal, 12)
+                .padding(.bottom, 32)
+        }
+    }
+    
+    @ViewBuilder
+    private var mainListView: some View {
+        if layoutDirection == .leftToRight {
+            leadingListView
+        } else {
+            trailingListView
+        }
     }
     
     @ViewBuilder
@@ -134,8 +134,7 @@ public struct ExerciseView: View {
                 .cornerRadius(12)
                 .overlay {
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(lineWidth: 1)
-                        .foregroundColor(selectedList.contains(exercise) ? .gray50 : .greyishTwo)
+                        .strokeBorder(selectedList.contains(exercise) ? .gray50 : .greyishTwo, lineWidth: 1)
                 }
                 .onTapGesture {
                     if selectedList.contains(exercise) {
@@ -148,7 +147,6 @@ public struct ExerciseView: View {
                         }
                     }
                 }
-            
         }))
     }
     
@@ -165,8 +163,7 @@ public struct ExerciseView: View {
                 .cornerRadius(12)
                 .overlay {
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(lineWidth: 1)
-                        .foregroundColor(selectedList.contains(exercise) ? .gray50 : .greyishTwo)
+                        .strokeBorder(selectedList.contains(exercise) ? .gray50 : .greyishTwo, lineWidth: 1)
                 }
                 .onTapGesture {
                     if selectedList.contains(exercise) {
@@ -181,6 +178,47 @@ public struct ExerciseView: View {
                 }
             
         }))
+    }
+}
+
+// MARK: - 선택된 리스트 @ViewBuilder
+extension ExerciseView {
+    
+    @ViewBuilder
+    private var selectedScrollView: some View {
+        ScrollViewReader { scrollProxy in
+            ScrollView(showsIndicators: false) {
+                selectedListView
+                    .onPreferenceChange(SizePreferenceKey.self) { size in
+                        print("frameSize -> \(size)")
+                        selectedListHeight = size.height
+                    }
+                    .padding(.vertical, 2)
+                    .padding(.horizontal, 12)
+                    .onChange(of: selectedListHeight) { newValue in
+                        if newValue > 119 {
+                            scrollProxy.scrollTo(selectedList.last ?? "")
+                        }
+                    }
+            }
+            .padding(.top, 14)
+            .padding(.bottom, 8)
+            .frame(maxHeight: getScrollHeight())
+            .introspect(.scrollView, on: .iOS(.v15, .v16, .v17)) { scrollView in
+                /// 119인 이유는 3줄 초과 시 스크롤이기 때문에 3줄오버될때의 크기가 119가 넘기 떄문에 걸어뒀따
+                scrollView.isScrollEnabled = selectedListHeight > 119
+                scrollView.bounces = false
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var selectedListView: some View {
+        if layoutDirection == .leftToRight {
+            selectedLeadingListView
+        } else {
+            selectedTrailingListView
+        }
     }
     
     @ViewBuilder
@@ -204,14 +242,14 @@ public struct ExerciseView: View {
                         selectedList.removeAll(where: { $0 == exercise})
                     }
             }
+            .id(exercise)
             .background(.primary150)
             .cornerRadius(12)
             .overlay {
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(lineWidth: 1)
-                    .foregroundColor(.primary500)
+                    .strokeBorder(.primary500, lineWidth: 1, antialiased: true)
+//                    .stroke(.primary500, lineWidth: 1)
             }
-            
         }))
     }
     
@@ -236,15 +274,27 @@ public struct ExerciseView: View {
                         selectedList.removeAll(where: { $0 == exercise})
                     }
             }
+            .id(exercise)
             .padding(.horizontal, 12)
             .background(.primary150)
             .cornerRadius(12)
             .overlay {
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(lineWidth: 1)
-                    .foregroundColor(.primary500)
+                    .stroke(.primary500, lineWidth: 1)
             }
         }))
+    }
+}
+
+// MARK: - 선택된 리스트 높이 구하기
+extension ExerciseView {
+    
+    private func getScrollHeight() -> CGFloat {
+        if selectedListHeight == 0 {
+            return 53
+        } else {
+            return min(selectedListHeight + 28, 121)
+        }
     }
 }
 

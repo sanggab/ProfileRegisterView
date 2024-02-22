@@ -9,7 +9,9 @@ import SwiftUI
 import SwiftUIIntrospect
 
 public struct ExerciseView: View {
-    public var exerciseList: [String] = ["Soccer", "BaseBall", "Taekwondo", "Karate", "Yoga", "Kickboxing", "Climbing", "Running", "Golf", "Cycling", "Ski", "Kayak", "Tennis", "Bowling", "Table Tennis", "Basketball", "Fencing", "Football", "Jogging", "Volleyball", "Hockey", "Ice Hockey", "Training", "Swimming", "Crossfit", "Meditation", "Sports dance", "Horse riding", "Skating", "Puzzle", "Drink", "Opera", "Photograph", "oneTwoThree", "FourFiveSix", "HiNiceTo", "My", "Name", "IS", "KAPPA", "GAB", "엄청 매우 긴 운동을 넣어보자", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지"]
+    public var exerciseList: [String] = ["Soccer", "BaseBall", "Taekwondo", "Karate", "Yoga", "Kickboxing", "Climbing", "Running", "Golf", "Cycling", "Ski", "Kayak", "Tennis", "Bowling", "Table Tennis", "Basketball", "Fencing", "Football", "Jogging", "Volleyball", "Hockey", "Ice Hockey", "Training", "Swimming", "Crossfit", "Meditation", "Sports dance", "Horse riding", "Skating", "Puzzle", "Drink", "Opera", "Photograph", "oneTwoThree", "FourFiveSix", "HiNiceTo", "My", "Name", "IS", "KAPPA", "GAB", "엄청 매우 긴 운동을 넣어보자", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지진짜로 엄청 긴 운동을진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지진짜로 엄청 긴 운동을", "하잉"]
+    
+//    public var exerciseList: [String] = ["하이", "진짜로 엄청 긴 운동을 넣어볼까 얼마나 잘 되는지진짜로 엄청 긴 운동을"]
     
     @State private var selectedList: [String] = []
     @State private var listSelectedState: Bool = true

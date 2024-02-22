@@ -26,6 +26,7 @@ public struct LeadingAlignmnetView<FlowFeatures: FlowLayoutFeatures>: View {
             ZStack(alignment: .topLeading) {
                 var width: CGFloat = 0
                 var height: CGFloat = 0
+                var previousHeight: CGFloat = 0
                 
                 ForEach(Array(features.data.enumerated()), id: \.offset) { index, item in
                     features.content(item)
@@ -34,9 +35,12 @@ public struct LeadingAlignmnetView<FlowFeatures: FlowLayoutFeatures>: View {
                             if abs(width) + d.width > frameSize.width {
                                 /// 이제 해당 width에 더이상 배치할 수 없을 경우, 맨 처음에 붙어야 하므로 width를 0으로 바꿔준다
                                 width = 0
-                                height -= d.height
+                                height -= previousHeight
                                 height -= features.lineSpacing
+    
                             }
+                            
+                            previousHeight = d.height
 
                             let result: CGFloat = width
 
@@ -57,7 +61,7 @@ public struct LeadingAlignmnetView<FlowFeatures: FlowLayoutFeatures>: View {
 
                         }
                         .alignmentGuide(.top) { d in
-
+                            print("height -> \(height)")
                             return height
                         }
 
